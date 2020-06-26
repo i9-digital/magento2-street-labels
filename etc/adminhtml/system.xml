@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="customer">
+            <group id="address">
+                <field id="show_main_street_label" translate="label" type="select" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show main street label</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Set No to show individual labels</comment>
+                </field>
+                <field id="street_line0_label" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Street line 1 label</label>
+                    <depends>
+                        <field id="customer/address/show_main_street_label">0</field>
+                    </depends>
+                </field>
+                <field id="street_line1_label" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Street line 2 label</label>
+                    <depends>
+                        <field id="customer/address/show_main_street_label">0</field>
+                    </depends>
+                </field>
+                <field id="street_line2_label" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Street line 3 label</label>
+                    <depends>
+                        <field id="customer/address/show_main_street_label">0</field>
+                    </depends>
+                </field>
+                <field id="street_line3_label" translate="label" type="text" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Street line 4 label</label>
+                    <depends>
+                        <field id="customer/address/show_main_street_label">0</field>
+                    </depends>
+                </field>
+                <field id="required_street_lines" translate="label" type="select" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Required Street Lines</label>
+                    <source_model>I9\StreetLabel\Model\Adminhtml\Source\RequiredStreetLines</source_model>
+                    <depends>
+                        <field id="customer/address/show_main_street_label">0</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

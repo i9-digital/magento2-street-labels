@@ -1,0 +1,12 @@
+fieldset.show_labels.field.street .field .label {
+    position: unset;
+    margin: 0 0 8px;
+    overflow: auto;
+    height: auto;
+    display: block;
+    width: auto;
+}
+
+fieldset.show_labels > .control > .field {
+    margin: 0 0 20px
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <customer>
+            <address>
+                <show_main_street_label>1</show_main_street_label>
+                <required_street_lines>0,1</required_street_lines>
+                <street_line0_label>Street</street_line0_label>
+                <street_line1_label>Number</street_line1_label>
+                <street_line2_label>Neighborhood</street_line2_label>
+                <street_line3_label>Complement</street_line3_label>
+            </address>
+        </customer>
+    </default>
+</config>

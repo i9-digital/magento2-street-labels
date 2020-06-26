@@ -1,0 +1,32 @@
+{
+    "name": "i9/streetlabel",
+    "description": "Show individual labels to street fields on checkout",
+    "require": {},
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/i9-digital/magento2-street-labels"
+        }
+    ],
+    "extra": {
+        "map": [
+            [
+                "*",
+                "I9/StreetLabel"
+            ]
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "I9\\StreetLabel\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

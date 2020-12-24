@@ -10,9 +10,8 @@
         "sort-packages": true
     },
     "require": {
-        "php": "~7.1.3||~7.2.0||~7.3.0",
-        "magento/framework": "102.0.*",
-        "magento/module-checkout": "100.3.*"
+        "php": ">=7.1.3",
+        "magento/module-checkout": ">=100.3.*"
     },
     "repositories": [
         {
@@ -28,5 +27,5 @@
             "registration.php"
         ]
     },
-    "version": "0.0.2"
+    "version": "0.0.3"
 }
